@@ -10,6 +10,9 @@ from reportlab.lib.styles import ParagraphStyle  # noqa: E402
 from reportlab.platypus import Paragraph, Table, TableStyle, KeepTogether  # noqa: E402
 
 s = estilos()
+# Los títulos nunca quedan solos al final de una página: se mantienen con el párrafo siguiente.
+s["h1"].keepWithNext = 1
+s["h2"].keepWithNext = 1
 REF = ParagraphStyle("ref", parent=s["bullet"], leftIndent=22, firstLineIndent=-22)
 
 

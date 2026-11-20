@@ -12,7 +12,7 @@ Repositorio central de la Unidad I – Introducción a aplicaciones web progresi
 |---|---|---|---|---|---|
 | SP1 | Nativa | AquaTrack | [AquaTrack-Nativa](https://github.com/JazyelAe/AquaTrack-Nativa) | [APK v1.0.0](https://github.com/JazyelAe/AquaTrack-Nativa/releases/tag/v1.0.0) | [SP1 PDF](reportes/SP1_Aplicacion_Nativa_SerranoArana.pdf) |
 | SP2 | Web | Mi Recetario | [Mi_Recetario](https://github.com/JazyelAe/Mi_Recetario) | [GitHub Pages](https://jazyelae.github.io/Mi_Recetario/) | [SP2 PDF](reportes/SP2_Aplicacion_Web_SerranoArana.pdf) |
-| SP3 | Escritorio | DeskData Pro | _pendiente_ | _pendiente_ | _pendiente_ |
+| SP3 | Escritorio | DeskData Pro | [App_de_Escritorio](https://github.com/JazyelAe/App_de_Escritorio) | [DeskDataPro.exe v1.0.0](https://github.com/JazyelAe/App_de_Escritorio/releases/tag/v1.0.0) | [SP3 PDF](reportes/SP3_Aplicacion_Escritorio_SerranoArana.pdf) |
 | SP4 | Móvil | Mis Pendientes | _pendiente_ | _pendiente_ | _pendiente_ |
 | SP5 | Multiplataforma | ConvierteYA | _pendiente_ | _pendiente_ | _pendiente_ |
 | SP6 | Orientada a servicios | BiblioServ | _pendiente_ | _pendiente_ | _pendiente_ |

@@ -1,0 +1,36 @@
+<!doctype html><html lang="es"><meta charset="utf-8">
+<style>
+body{margin:0;font-family:Helvetica,Arial,sans-serif;background:#fff;color:#222}
+#diagrama{width:1160px;padding:28px 20px;box-sizing:border-box}
+h2{margin:0 0 18px;text-align:center;color:#7B173B;font-size:24px}
+.capa{border:2px solid #7B173B;border-radius:12px;padding:12px 14px;background:#F4EEF1;margin-bottom:10px}
+.capa h3{margin:0 0 8px;font-size:17px;color:#7B173B}
+.fila{display:flex;gap:10px}
+.mod{flex:1;background:#fff;border:1px solid #7B173B;border-radius:8px;padding:8px;font-size:13px;text-align:center}
+.mod b{display:block;font-size:14px;margin-bottom:3px}
+.so{border-color:#0B7DDA;background:#EAF4FD}.so h3{color:#0B5FA5}.so .mod{border-color:#0B7DDA}
+.hw{display:flex;gap:10px}.hw div{flex:1;background:#555;color:#fff;border-radius:8px;padding:9px;font-size:13px;text-align:center}
+.flecha{text-align:center;color:#7B173B;font-size:22px;line-height:1;margin:-2px 0 6px}
+.nota{font-size:13px;color:#555;text-align:center;margin-top:12px}
+</style>
+<div id="diagrama">
+<h2>DeskData Pro: aplicación ⇄ sistema operativo ⇄ hardware local</h2>
+<div class="capa"><h3>1. Aplicación (DeskDataPro.exe = Python + PySide6 empaquetado con PyInstaller)</h3>
+  <div class="fila">
+    <div class="mod"><b>ventana.py</b>tabla, formulario, filtros y pestañas (Qt Widgets)</div>
+    <div class="mod"><b>grafica.py</b>gráfica de barras con QPainter</div>
+    <div class="mod"><b>models.py</b>JSON, CSV, respaldos y estadísticas</div>
+    <div class="mod"><b>worker_service.py</b>QThread que mide CPU, RAM y disco cada 2 s</div>
+  </div></div>
+<div class="flecha">⇅ llamadas a las APIs del sistema (sin Internet)</div>
+<div class="capa so"><h3>2. Sistema operativo Windows</h3>
+  <div class="fila">
+    <div class="mod"><b>Ventanas e icono</b>barra de tareas, Alt+Tab</div>
+    <div class="mod"><b>Diálogos nativos</b>Abrir / Guardar como, mensajes</div>
+    <div class="mod"><b>Sistema de archivos</b>%APPDATA%\DeskDataPro\registros.json, respaldos, CSV</div>
+    <div class="mod"><b>Información del sistema</b>psutil: procesos, memoria y discos</div>
+  </div></div>
+<div class="flecha">⇅</div>
+<div class="hw"><div>Procesador (CPU)</div><div>Memoria RAM</div><div>Disco duro / SSD</div><div>Pantalla, teclado y mouse</div></div>
+<div class="nota">Una aplicación de escritorio se ejecuta directamente en la computadora y usa sus recursos locales; no depende de un servidor ni de un navegador.</div>
+</div></html>
