@@ -18,7 +18,7 @@ Leyenda: ⬜ pendiente · 🟨 en curso · ✅ terminado · 🛑 esperando revis
 ## Subproductos
 | # | Estado | Paso del flujo (1–12) | Notas |
 |---|---|---|---|
-| SP1 Nativa | 🛑 | 4 · Checkpoint A | SPEC.md escrito en repos/kotlin (sin push). Pendiente: aprobar SPEC y decidir renombre a AquaTrack-Nativa. |
+| SP1 Nativa | 🟨 | 8 · Capturas | SPEC aprobado; repo renombrado a AquaTrack-Nativa; código, Actions y Release v1.0.0 listos (APK verificado). Diagrama y borrador del PDF (`tools/reportes/sp1.py`) hechos. Esperando 8 capturas del teléfono (01–08) en `evidencias/SP1/`. |
 | SP2 Web | ⬜ | — | |
 | SP3 Escritorio | ⬜ | — | |
 | SP4 Móvil | ⬜ | — | |

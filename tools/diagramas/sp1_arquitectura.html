@@ -1,0 +1,40 @@
+<!doctype html><html lang="es"><meta charset="utf-8">
+<style>
+body{margin:0;font-family:Helvetica,Arial,sans-serif;background:#fff;color:#222}
+#diagrama{width:1160px;padding:28px 20px;box-sizing:border-box}
+h2{margin:0 0 18px;text-align:center;color:#7B173B;font-size:24px}
+.fila{display:flex;align-items:stretch;gap:0}
+.caja{flex:1;border:2px solid #7B173B;border-radius:12px;padding:14px 14px;background:#F4EEF1}
+.caja h3{margin:0 0 8px;font-size:17px;color:#7B173B}
+.caja ul{margin:0;padding-left:18px;font-size:14px;line-height:1.5}
+.flecha{width:56px;display:flex;align-items:center;justify-content:center;font-size:34px;color:#7B173B}
+.so{margin-top:18px;border:2px solid #0B7DDA;border-radius:12px;padding:12px 14px;background:#EAF4FD}
+.so h3{margin:0 0 8px;font-size:17px;color:#0B5FA5;text-align:center}
+.apis{display:flex;gap:10px}
+.api{flex:1;background:#fff;border:1px solid #0B7DDA;border-radius:8px;padding:8px;font-size:13px;text-align:center}
+.api b{display:block;font-size:14px;margin-bottom:3px}
+.hw{margin-top:14px;display:flex;gap:10px}
+.hw div{flex:1;background:#555;color:#fff;border-radius:8px;padding:8px;font-size:13px;text-align:center}
+.nota{font-size:12px;color:#555;text-align:center;margin-top:10px}
+</style>
+<div id="diagrama">
+<h2>Arquitectura de AquaTrack: de Kotlin a las APIs nativas de Android</h2>
+<div class="fila">
+  <div class="caja"><h3>1. Código fuente</h3><ul><li>Kotlin 2.0</li><li>Jetpack Compose + Material 3</li><li>6 archivos: pantallas, almacén y recordatorio</li></ul></div>
+  <div class="flecha">➜</div>
+  <div class="caja"><h3>2. Compilación (Gradle)</h3><ul><li>Kotlin → bytecode → DEX</li><li>Recursos + manifiesto</li><li>GitHub Actions: <code>assembleDebug</code></li></ul></div>
+  <div class="flecha">➜</div>
+  <div class="caja"><h3>3. APK instalado</h3><ul><li>AquaTrack-v1.0.0.apk</li><li>Android 8.0+ (API 26)</li><li>Se ejecuta en Android Runtime (ART)</li></ul></div>
+</div>
+<div class="so"><h3>4. APIs del sistema Android que usa la app</h3>
+  <div class="apis">
+    <div class="api"><b>SharedPreferences</b>tomas por día, meta y ajustes</div>
+    <div class="api"><b>WorkManager</b>tarea periódica cada 1–3 h</div>
+    <div class="api"><b>NotificationManager</b>canal + notificación local</div>
+    <div class="api"><b>Permisos</b>POST_NOTIFICATIONS (Android 13+)</div>
+    <div class="api"><b>Vibrator</b>vibración al cumplir la meta</div>
+  </div>
+</div>
+<div class="hw"><div>Almacenamiento interno</div><div>Barra de notificaciones</div><div>Motor de vibración</div><div>Pantalla táctil</div></div>
+<div class="nota">Una app nativa se programa con el SDK de la plataforma y accede directamente al sistema operativo y al hardware, sin navegador ni capa intermedia.</div>
+</div></html>
