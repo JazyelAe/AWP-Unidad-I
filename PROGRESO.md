@@ -19,8 +19,8 @@ Leyenda: ⬜ pendiente · 🟨 en curso · ✅ terminado · 🛑 esperando revis
 | # | Estado | Paso del flujo (1–12) | Notas |
 |---|---|---|---|
 | SP1 Nativa | ✅ | 12 · Aprobado | Repo AquaTrack-Nativa, Release v1.0.0 con APK, capturas reales en emulador Android 14 (workflow *Capturas en emulador*), CA-1…CA-10 ✅ en SPEC, PDF `reportes/SP1_Aplicacion_Nativa_SerranoArana.pdf` (10 págs.) revisado. Aprobado el 20/11/2026 (opcional: probar en teléfono real). |
-| SP2 Web | 🛑 | 12 · Checkpoint B | Pages actualizado (JSON + TheMealDB + detalle + validación + responsive, sin PWA). Pruebas `tools/pruebas_sp2.py` 9/9 contra la URL pública; 13 capturas automáticas; PDF `reportes/SP2_Aplicacion_Web_SerranoArana.pdf` (9 págs.) revisado. Esperando revisión. |
-| SP3 Escritorio | ⬜ | — | |
+| SP2 Web | ✅ | 12 · Aprobado | Pages actualizado (JSON + TheMealDB + detalle + validación + responsive, sin PWA). Pruebas `tools/pruebas_sp2.py` 9/9 contra la URL pública; 13 capturas automáticas; PDF `reportes/SP2_Aplicacion_Web_SerranoArana.pdf` (9 págs.) revisado. Aprobado el 20/11/2026. |
+| SP3 Escritorio | 🛑 | 4 · Checkpoint A | SPEC.md escrito en repos/App_de_Escritorio (sin push). Hallazgo: CPU fija en 12.5 % en Windows; datos se perderían en .exe. Pendiente: decidir archivos web (legacy/ o borrar) y desactivar Pages. |
 | SP4 Móvil | ⬜ | — | |
 | SP5 Multiplataforma | ⬜ | — | |
 | SP6 Servicios | ⬜ | — | |
