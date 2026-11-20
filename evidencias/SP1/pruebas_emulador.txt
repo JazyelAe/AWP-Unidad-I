@@ -1,0 +1,41 @@
+== Dispositivo: sdk_gphone64_x86_64 · Android 14 (API 34)
+CA-3 instalación: OK
+Idioma del sistema: es-MX
+CA-3 la app abre: OK
+captura: 01_inicio.png
+  tocado: +250 ml
+  tocado: +500 ml
+  tocado: +250 ml
+CA-4 suma al anillo (1000 ml): OK
+captura: 02_registro.png
+  tocado: +500 ml
+  tocado: +500 ml
+CA-6 felicitación al cumplir la meta: OK
+captura: 03_meta_alcanzada.png
+-- Vibraciones recientes registradas por el sistema:
+    createTime: 11-20 19:44:30.419, startTime: 11-20 19:44:30.433, endTime: 11-20 19:44:31.183, durationMs: 764, status: finished, effect: Mono{mEffect=Composed{segments=[Step{amplitude=0.0, frequencyHz=0.0, duration=0}, Step{amplitude=1.0, frequencyHz=0.0, duration=300}, Step{amplitude=0.0, frequencyHz=0.0, duration=150}, Step{amplitude=1.0, frequencyHz=0.0, duration=300}], repeat=-1}}, originalEffect: Mono{mEffect=Composed{segments=[Step{amplitude=0.0, frequencyHz=0.0, duration=0}, Step{amplitude=-1.0, frequencyHz=0.0, duration=300}, Step{amplitude=0.0, frequencyHz=0.0, duration=150}, Step{amplitude=-1.0, frequencyHz=0.0, duration=300}], repeat=-1}}, scale: 0.00, callerInfo: CallerInfo{ attrs=VibrationAttributes: Usage=UNKNOWN Audio Usage= USAGE_UNKNOWN Flags=0, uid=10192, displayId=0, opPkg=com.jaziel.aquatrack, reason=null}
+
+  Previous external vibrations:
+  tocado: Genial
+  tocado: Deshacer
+CA-4 deshacer resta (1500 ml): OK
+  tocado: +500 ml
+CA-7 los datos persisten al cerrar y abrir (2000 ml): OK
+  tocado: Historial
+captura: 04_historial.png
+  tocado: Ajustes
+  tocado: true
+captura: 06_permiso.png
+  tocado: Permitir
+CA-8 diálogo de permiso POST_NOTIFICATIONS: OK
+RF-4 recordatorio programado con WorkManager: OK
+-- Trabajo programado en JobScheduler (WorkManager):
+  JOB #u0a192/0: 9f2b7ec com.jaziel.aquatrack/androidx.work.impl.background.systemjob.SystemJobService
+    u0a192 tag=*job*/com.jaziel.aquatrack/androidx.work.impl.background.systemjob.SystemJobService#0
+    Source: uid=u0a192 user=0 pkg=com.jaziel.aquatrack
+captura: 05_ajustes.png
+  tocado: Probar notificación
+CA-9 notificación publicada: OK
+captura: 07_notificacion.png
+captura: 08_icono.png
+== Fin

@@ -18,7 +18,7 @@ Leyenda: ⬜ pendiente · 🟨 en curso · ✅ terminado · 🛑 esperando revis
 ## Subproductos
 | # | Estado | Paso del flujo (1–12) | Notas |
 |---|---|---|---|
-| SP1 Nativa | 🟨 | 8 · Capturas | SPEC aprobado; repo renombrado a AquaTrack-Nativa; código, Actions y Release v1.0.0 listos (APK verificado). Diagrama y borrador del PDF (`tools/reportes/sp1.py`) hechos. Esperando 8 capturas del teléfono (01–08) en `evidencias/SP1/`. |
+| SP1 Nativa | 🛑 | 12 · Checkpoint B | Repo AquaTrack-Nativa, Release v1.0.0 con APK, capturas reales en emulador Android 14 (workflow *Capturas en emulador*), CA-1…CA-10 ✅ en SPEC, PDF `reportes/SP1_Aplicacion_Nativa_SerranoArana.pdf` (10 págs.) revisado. Falta: tu revisión y probar en teléfono real (opcional). |
 | SP2 Web | ⬜ | — | |
 | SP3 Escritorio | ⬜ | — | |
 | SP4 Móvil | ⬜ | — | |

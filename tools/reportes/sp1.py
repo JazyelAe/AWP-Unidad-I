@@ -105,16 +105,20 @@ cuerpo = [
     P("La Figura 1 muestra cómo el código Kotlin se compila con Gradle hasta convertirse en un APK que se ejecuta en Android y "
       "usa directamente las APIs del sistema operativo y el hardware del teléfono. La Figura 2 muestra la pantalla principal de la app."),
     fig("fig_arquitectura.png", "Arquitectura de una app nativa: del código Kotlin a la compilación, el APK y las APIs del sistema Android.", ancho=504),
-    fig("01_inicio.png", "Pantalla principal de AquaTrack en un teléfono Android.", ancho=220, alto_max=400),
+    fig("01_inicio.png", "Pantalla principal de AquaTrack (emulador Pixel 6, Android 14).", ancho=220, alto_max=400),
 
     P("6. Ejemplo propio: AquaTrack", "h1"),
     P("<b>Propósito.</b> Ayudar a mantener una buena hidratación: el usuario registra cada vaso de agua, ve su avance contra una meta "
       "diaria y recibe recordatorios. <b>Repositorio:</b> " + enlace(REPO) + ". <b>Descarga (APK):</b> " + enlace(RELEASE) + "."),
+    P("<b>Evidencias.</b> Las capturas se tomaron instalando el APK publicado en un emulador Pixel 6 con Android 14 (API 34) en "
+      "español. El recorrido se automatizó con <i>adb</i> y UI Automator en GitHub Actions (script <i>scripts/capturas.sh</i>), que "
+      "además dejó un registro de las pruebas: instalación, suma y resta de tomas, felicitación, vibración registrada por el sistema, "
+      "persistencia tras cerrar la app, permiso de notificaciones, tarea de WorkManager programada y notificación publicada."),
     P("Cómo funciona, paso a paso", "h2"),
     P("<b>Paso 1. Registrar agua.</b> En la pestaña <i>Hoy</i> se toca +250 ml, +500 ml u <i>Otra cantidad</i> (50–2000 ml). "
       "Cada toma se guarda con su hora en SharedPreferences y el anillo de progreso se actualiza; <i>Deshacer</i> quita la última toma."),
-    P("<b>Paso 2. Cumplir la meta.</b> Al alcanzar la meta, la app hace vibrar el teléfono con la API <i>Vibrator</i> y muestra "
-      "una felicitación (una vez por día)."),
+    P("<b>Paso 2. Cumplir la meta.</b> Al alcanzar la meta, la app hace vibrar el teléfono con la API <i>Vibrator</i> (dos pulsos "
+      "de 300 ms, registrados por el servicio de vibración del sistema) y muestra una felicitación, una vez por día."),
     par([("02_registro.png", "Registro de tomas del día."), ("03_meta_alcanzada.png", "Meta alcanzada: felicitación y vibración.")]),
     P("<b>Paso 3. Consultar el historial.</b> La pestaña <i>Historial</i> muestra el total de los últimos 7 días y marca los "
       "días en que se cumplió la meta. Los datos persisten aunque se cierre la app o se reinicie el teléfono."),
@@ -125,7 +129,7 @@ cuerpo = [
       "para la meta, publica una notificación local que abre la app al tocarla. El botón <i>Probar notificación</i> permite "
       "demostrarlo al instante."),
     par([("06_permiso.png", "Diálogo del sistema para el permiso de notificaciones."),
-         ("07_notificacion.png", "Notificación local de recordatorio.")]),
+         ("07_notificacion.png", "Notificación local enviada con el botón Probar notificación.")]),
     fig("08_icono.png", "Icono propio de AquaTrack instalado en el cajón de aplicaciones.", ancho=220, alto_max=300),
     fig("09_release.png", "Release v1.0.0 en GitHub con el APK descargable, generado por GitHub Actions.", ancho=480),
 

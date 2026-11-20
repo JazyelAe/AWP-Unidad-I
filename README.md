@@ -10,7 +10,7 @@ Repositorio central de la Unidad I – Introducción a aplicaciones web progresi
 
 | # | Tipo de aplicación | Mi app | Repositorio | App publicada / descarga | Reporte PDF |
 |---|---|---|---|---|---|
-| SP1 | Nativa | AquaTrack | [AquaTrack-Nativa](https://github.com/JazyelAe/AquaTrack-Nativa) | [APK v1.0.0](https://github.com/JazyelAe/AquaTrack-Nativa/releases/tag/v1.0.0) | _pendiente_ |
+| SP1 | Nativa | AquaTrack | [AquaTrack-Nativa](https://github.com/JazyelAe/AquaTrack-Nativa) | [APK v1.0.0](https://github.com/JazyelAe/AquaTrack-Nativa/releases/tag/v1.0.0) | [SP1 PDF](reportes/SP1_Aplicacion_Nativa_SerranoArana.pdf) |
 | SP2 | Web | Mi Recetario | _pendiente_ | _pendiente_ | _pendiente_ |
 | SP3 | Escritorio | DeskData Pro | _pendiente_ | _pendiente_ | _pendiente_ |
 | SP4 | Móvil | Mis Pendientes | _pendiente_ | _pendiente_ | _pendiente_ |
