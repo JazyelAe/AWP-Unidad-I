@@ -18,8 +18,8 @@ Leyenda: ⬜ pendiente · 🟨 en curso · ✅ terminado · 🛑 esperando revis
 ## Subproductos
 | # | Estado | Paso del flujo (1–12) | Notas |
 |---|---|---|---|
-| SP1 Nativa | 🛑 | 12 · Checkpoint B | Repo AquaTrack-Nativa, Release v1.0.0 con APK, capturas reales en emulador Android 14 (workflow *Capturas en emulador*), CA-1…CA-10 ✅ en SPEC, PDF `reportes/SP1_Aplicacion_Nativa_SerranoArana.pdf` (10 págs.) revisado. Falta: tu revisión y probar en teléfono real (opcional). |
-| SP2 Web | ⬜ | — | |
+| SP1 Nativa | ✅ | 12 · Aprobado | Repo AquaTrack-Nativa, Release v1.0.0 con APK, capturas reales en emulador Android 14 (workflow *Capturas en emulador*), CA-1…CA-10 ✅ en SPEC, PDF `reportes/SP1_Aplicacion_Nativa_SerranoArana.pdf` (10 págs.) revisado. Falta: tu revisión y probar en teléfono real (opcional). |
+| SP2 Web | 🛑 | 4 · Checkpoint A | SPEC.md escrito en repos/Mi_Recetario (sin push). Esperando aprobación. |
 | SP3 Escritorio | ⬜ | — | |
 | SP4 Móvil | ⬜ | — | |
 | SP5 Multiplataforma | ⬜ | — | |
