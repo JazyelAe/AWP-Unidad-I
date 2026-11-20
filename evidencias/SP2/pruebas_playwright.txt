@@ -1,0 +1,11 @@
+✅ CA-2 recetas desde data/recetas.json - respuestas: [200]
+✅ CA-3 filtro, búsqueda y acentos - 12 recetas; Sopas=['SOPAS', 'SOPAS']; aguacate=['Guacamole clásico']; jitomate=4 / JITÓMATE=4
+✅ CA-4 detalle, Esc y enlace directo - hash=#receta/tacos-de-papa; ingredientes=6; pasos=5; Esc cierra=True; #receta/guacamole -> Guacamole clásico
+✅ CA-5 API TheMealDB - 25 resultado(s) para "chicken" (se muestran 8). · detalle: Chicken Handi · HTTP [200]
+✅ CA-6 validación del formulario - errores=4; envío: ¡Gracias, Jaziel Serrano! Tu sugerencia se guardó en este navegador (llevas 1).
+✅ CA-9 sin manifest ni service worker - manifest=0; SW=0
+✅ CA-8 sin conexión la app NO carga - Page.reload: net::ERR_INTERNET_DISCONNECTED
+✅ CA-1 consola sin errores - errores: []
+✅ CA-7 sin desbordamiento horizontal - {1366: True, 768: True, 390: True}
+
+Resultado: 9/9 criterios OK
