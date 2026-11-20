@@ -13,12 +13,12 @@ Leyenda: ⬜ pendiente · 🟨 en curso · ✅ terminado · 🛑 esperando revis
   - `App_de_Escritorio`: PySide6 + `--self-test` pasa. Mezcla PWA (index.html, manifest, SW). Sin `--capturas`, sin PyInstaller/Release.
   - `service`: Flask con token y SQLite; GET sin token da 401 (debe ser público); `init_db` solo en `__main__`; `send_from_directory("static")` pero no existe `static/`. Sin README, Open Library, pytest ni despliegue.
   - `web`: PWA en Pages con SW activo, manifest y Firestore. Faltan `offline.html`, persistencia offline de Firestore e icono maskable propio.
-- 🛑 Esperando "continúa" para iniciar SP1.
+- ✅ "continúa" recibido: SP1 iniciado.
 
 ## Subproductos
 | # | Estado | Paso del flujo (1–12) | Notas |
 |---|---|---|---|
-| SP1 Nativa | ⬜ | — | |
+| SP1 Nativa | 🛑 | 4 · Checkpoint A | SPEC.md escrito en repos/kotlin (sin push). Pendiente: aprobar SPEC y decidir renombre a AquaTrack-Nativa. |
 | SP2 Web | ⬜ | — | |
 | SP3 Escritorio | ⬜ | — | |
 | SP4 Móvil | ⬜ | — | |
