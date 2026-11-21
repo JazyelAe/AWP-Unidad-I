@@ -1,0 +1,33 @@
+<!doctype html><html lang="es"><meta charset="utf-8">
+<style>
+body{margin:0;font-family:Helvetica,Arial,sans-serif;background:#fff;color:#222}
+#diagrama{width:1160px;padding:28px 20px;box-sizing:border-box}
+h2{margin:0 0 18px;text-align:center;color:#7B173B;font-size:24px}
+.fila{display:flex;align-items:stretch}
+.caja{flex:1;border:2px solid #7B173B;border-radius:12px;padding:12px 14px;background:#F4EEF1}
+.caja h3{margin:0 0 8px;font-size:17px;color:#7B173B}
+.caja ul{margin:0;padding-left:18px;font-size:14px;line-height:1.55}
+.fl{width:52px;display:flex;align-items:center;justify-content:center;font-size:32px;color:#7B173B}
+.tel{border-color:#0B7DDA;background:#EAF4FD}.tel h3{color:#0B5FA5}
+.nota{font-size:13px;color:#555;text-align:center;margin-top:14px}
+</style>
+<div id="diagrama">
+<h2>Mis Pendientes: interacción táctil → app → capacidades del teléfono</h2>
+<div class="fila">
+  <div class="caja"><h3>1. Gestos del usuario</h3><ul>
+    <li>👉 Deslizar a la derecha: completar</li><li>👈 Deslizar a la izquierda: borrar</li>
+    <li>✋ Mantener presionado: editar</li><li>⬇️ Jalar hacia abajo: actualizar</li><li>👆 Tocar el botón flotante: nueva tarea</li></ul></div>
+  <div class="fl">➜</div>
+  <div class="caja"><h3>2. App Flutter (Dart)</h3><ul>
+    <li>Widgets Material 3: <i>Dismissible</i>, <i>RefreshIndicator</i>, hoja inferior</li>
+    <li>Lógica: orden, filtros y vencidas</li>
+    <li>Compilada a código ARM nativo (APK)</li></ul></div>
+  <div class="fl">➜</div>
+  <div class="caja tel"><h3>3. Servicios del teléfono (Android)</h3><ul>
+    <li>🔔 Notificaciones locales + AlarmManager (9:00 del día límite)</li>
+    <li>📳 Motor de vibración (respuesta háptica)</li>
+    <li>💾 Almacenamiento local (SharedPreferences)</li>
+    <li>🔐 Permiso POST_NOTIFICATIONS (Android 13+)</li></ul></div>
+</div>
+<div class="nota">Una aplicación móvil está diseñada para la pantalla pequeña, el uso con una mano y las capacidades del teléfono; funciona sin conexión y se instala como APK.</div>
+</div></html>

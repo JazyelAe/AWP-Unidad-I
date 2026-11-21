@@ -1,0 +1,4 @@
+✅ La demo web carga y agrega tareas en vista móvil 390x844
+✅ Las tareas persisten al recargar (localStorage)
+✅ Sin desbordamiento horizontal
+✅ Consola sin errores []

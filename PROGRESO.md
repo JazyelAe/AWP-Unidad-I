@@ -21,7 +21,7 @@ Leyenda: ⬜ pendiente · 🟨 en curso · ✅ terminado · 🛑 esperando revis
 | SP1 Nativa | ✅ | 12 · Aprobado | Repo AquaTrack-Nativa, Release v1.0.0 con APK, capturas reales en emulador Android 14 (workflow *Capturas en emulador*), CA-1…CA-10 ✅ en SPEC, PDF `reportes/SP1_Aplicacion_Nativa_SerranoArana.pdf` (10 págs.) revisado. Aprobado el 20/11/2026 (opcional: probar en teléfono real). |
 | SP2 Web | ✅ | 12 · Aprobado | Pages actualizado (JSON + TheMealDB + detalle + validación + responsive, sin PWA). Pruebas `tools/pruebas_sp2.py` 9/9 contra la URL pública; 13 capturas automáticas; PDF `reportes/SP2_Aplicacion_Web_SerranoArana.pdf` (9 págs.) revisado. Aprobado el 20/11/2026. |
 | SP3 Escritorio | ✅ | 12 · Aprobado | Archivos web eliminados y Pages desactivado (aprobado). App reescrita en módulos en español; CPU real con psutil; datos en %APPDATA%; --capturas; Release v1.0.0 con DeskDataPro.exe probado en windows-latest; PDF (10 págs.). Aprobado el 20/11/2026. |
-| SP4 Móvil | 🛑 | 4 · Checkpoint A | SPEC.md escrito en repos/MisPendientes-Movil (repo aún no creado). |
+| SP4 Móvil | 🛑 | 12 · Checkpoint B | Repo nuevo MisPendientes-Movil (Flutter). flutter test 3/3; Release v1.0.1 (v1.0.0 tenía error de arranque, no usar); demo web en Pages; capturas reales con gestos en emulador Android 14; PDF (11 págs.). Esperando revisión. |
 | SP5 Multiplataforma | ⬜ | — | |
 | SP6 Servicios | ⬜ | — | |
 | SP7 PWA | ⬜ | — | |

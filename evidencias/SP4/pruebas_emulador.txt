@@ -1,0 +1,51 @@
+== Dispositivo: sdk_gphone64_x86_64 · Android 14 (API 34) · idioma es-MX
+CA-2 instalación del APK: OK
+CA-2 la app abre: OK
+  tocado: Agregar tareas de ejemplo
+Tareas de ejemplo agregadas
+captura: 01_lista.png
+  tocado: Nueva tarea
+  tocado: Alta
+captura: 02_nueva_tarea.png
+  tocado: Sin fecha límite
+captura: 03_selector_fecha.png
+  tocado: ACEPTAR
+  tocado: Agregar tarea
+CA-1 alta de tarea: OK
+captura: 04_deslizar_completar.png
+CA-3 deslizar a la derecha completa → contador: 5 pendiente(s) de 7 (antes 6 de 7)
+captura: 05a_deslizar_borrar.png
+captura: 05_borrar_deshacer.png
+  tocado: Deshacer
+CA-3 Deshacer restaura la tarea: OK
+CA-3 mantener presionado abre la edición: OK
+captura: 06_editar.png
+  tocado: Ordenar
+captura: 07a_menu_orden.png
+  tocado: Ordenar por: Prioridad
+captura: 07_orden_prioridad.png
+  tocado: Vencidas
+captura: 07b_filtro_vencidas.png
+CA-4 filtro Vencidas muestra la tarea vencida: OK
+  tocado: Todas
+CA-3 jalar para actualizar: OK
+captura: 12_jalar_actualizar.png
+CA-2 los datos persisten al cerrar y abrir: OK
+  tocado: Ajustes
+  tocado: Probar notificación
+captura: 09a_permiso.png
+  tocado: Permitir
+Permiso POST_NOTIFICATIONS concedido
+CA-5 notificación publicada: OK
+captura: 09_notificacion.png
+-- Recordatorios programados (AlarmManager):
+          type=RTC_WAKEUP tag=*walarm*:com.jaziel.mispendientes/com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver 
+-- Vibraciones registradas por el sistema (respuesta háptica):
+    createTime: 11-21 00:31:29.645, startTime: 11-21 00:31:29.662, endTime: 11-21 00:31:29.769, durationMs: 124, status: finished, effect: Mono{mEffect=Composed{segments=[Prebaked{effect=CLICK, strength=MEDIUM, fallback=
+    createTime: 11-21 00:31:39.626, startTime: 11-21 00:31:39.632, endTime: 11-21 00:31:39.798, durationMs: 172, status: finished, effect: Mono{mEffect=Composed{segments=[Prebaked{effect=TICK, strength=MEDIUM, fallback=t
+    createTime: 11-21 00:31:54.202, startTime: 11-21 00:31:54.204, endTime: 11-21 00:31:54.209, durationMs: 7, status: cancelled_superseded, effect: Mono{mEffect=Composed{segments=[Prebaked{effect=HEAVY_CLICK, strength=M
+  tocado: Oscuro
+captura: 08_modo_oscuro.png
+captura: 10_icono.png
+-- Mensajes de la app en logcat (errores):
+== Fin
