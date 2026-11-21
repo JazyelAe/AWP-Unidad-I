@@ -23,6 +23,6 @@ Leyenda: ⬜ pendiente · 🟨 en curso · ✅ terminado · 🛑 esperando revis
 | SP3 Escritorio | ✅ | 12 · Aprobado | Archivos web eliminados y Pages desactivado (aprobado). App reescrita en módulos en español; CPU real con psutil; datos en %APPDATA%; --capturas; Release v1.0.0 con DeskDataPro.exe probado en windows-latest; PDF (10 págs.). Aprobado el 20/11/2026. |
 | SP4 Móvil | ✅ | 12 · Aprobado | Repo nuevo MisPendientes-Movil (Flutter). flutter test 3/3; Release v1.0.1 (v1.0.0 tenía error de arranque, no usar); demo web en Pages; capturas reales con gestos en emulador Android 14; PDF (11 págs.). Aprobado el 20/11/2026. |
 | SP5 Multiplataforma | ✅ | 12 · Aprobado | Repo nuevo ConvierteYA-Multiplataforma (React Native + Expo SDK 58). jest 12/12; web en Pages 14/14 (Playwright); APK v1.0.1 con expo prebuild + Gradle, sin EAS (v1.0.0 decía «En línea» en modo avión, no usar); mismas conversiones en web y emulador Android 14; iOS no probado; PDF (8 págs.). Aprobado el 20/11/2026. |
-| SP6 Servicios | 🛑 | 4 · Checkpoint A | Auditoría de JazyelAe/service hecha; SPEC.md escrito en repos/service. Despliegue en Render requiere la cuenta de Jaziel. |
+| SP6 Servicios | 🔐 | 9 · Despliegue | Repo renombrado a BiblioServ-Servicios. Servicios Flask (auth con token firmado, catálogo CRUD, Open Library), pytest 14/14 en Actions, cliente en Pages, Playwright local 15/15. Falta: Jaziel crea la cuenta en Render y despliega el Blueprint. |
 | SP7 PWA | ⬜ | — | |
 | P1 Producto 1 | ⬜ | — | |
