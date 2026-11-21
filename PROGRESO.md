@@ -25,4 +25,7 @@ Leyenda: ⬜ pendiente · 🟨 en curso · ✅ terminado · 🛑 esperando revis
 | SP5 Multiplataforma | ✅ | 12 · Aprobado | Repo nuevo ConvierteYA-Multiplataforma (React Native + Expo SDK 58). jest 12/12; web en Pages 14/14 (Playwright); APK v1.0.1 con expo prebuild + Gradle, sin EAS (v1.0.0 decía «En línea» en modo avión, no usar); mismas conversiones en web y emulador Android 14; iOS no probado; PDF (8 págs.). Aprobado el 20/11/2026. |
 | SP6 Servicios | ✅ | 12 · Aprobado | Repo renombrado a BiblioServ-Servicios. Autenticación (token firmado), catálogo CRUD, Open Library, cliente en Pages, Swagger. pytest 14/14; Playwright 15/15 con el cliente de Pages + API local y 15/15 con gunicorn en Actions. Sin Render (decisión de Jaziel): la API no tiene URL pública. PDF (8 págs.). Aprobado el 20/11/2026. |
 | SP7 PWA | ✅ | 12 · Aprobado | Repo renombrado a MiRecetario-PWA. Firestore offline, SW con estrategias, offline.html, maskable, screenshots. Playwright 11/11 en Pages; reglas publicadas por Jaziel y comprobadas 6/6; capturas de DevTools e instalación de Jaziel. PDF (9 págs.). Aprobado el 20/11/2026. |
-| P1 Producto 1 | 🛑 | 12 · Checkpoint B | PDF de 8 págs.: tabla comparativa horizontal (7 tipos × 7 columnas), galería, enlaces y referencias. 42/42 enlaces verificados. Espera revisión final. |
+| P1 Producto 1 | ✅ | 12 · Aprobado | PDF de 8 págs.: tabla comparativa horizontal (7 tipos × 7 columnas), galería, enlaces y referencias. 42/42 enlaces verificados. Aprobado el 20/11/2026. |
+
+## ✅ Unidad I completa (20/11/2026)
+Los 7 subproductos y el Producto No. 1 están aprobados, con sus PDF en `reportes/` y sus evidencias en `evidencias/`.
