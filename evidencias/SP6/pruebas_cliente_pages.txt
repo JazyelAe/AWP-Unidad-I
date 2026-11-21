@@ -1,0 +1,17 @@
+✅ CA-1 GET /api/libros es público (200, 5 libros)
+✅ CA-2 POST sin token → 401 (401)
+✅ CA-2 DELETE con token falso → 401 (401)
+✅ La lista se ve sin iniciar sesión 
+✅ Login con el servicio de autenticación 
+✅ CA-4 Open Library devuelve resultados (5)
+✅ CA-4 «Usar estos datos» precarga el formulario (Aura)
+✅ CA-3 Alta: el libro aparece en la lista 
+✅ CA-3 Edición guardada 
+✅ CA-3 Préstamo (PUT disponible) 
+✅ CA-3 Borrado 
+✅ CA-2 El cliente con token falso recibe 401 y pide iniciar sesión (401 · Falta el token o no es válido. Inicia sesión otra vez.)
+✅ Consola sin errores (aparte de los 401 esperados) []
+✅ Sin desbordamiento horizontal en 390 px 
+✅ CA-6 Swagger UI muestra los 8 endpoints (8)
+
+15/15 comprobaciones correctas

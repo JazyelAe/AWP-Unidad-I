@@ -44,6 +44,10 @@ ok(estado == 401, "CA-2 DELETE con token falso → 401", f"({estado})")
 with sync_playwright() as p:
     nav = p.chromium.launch(channel="chrome")
     ctx = nav.new_context(viewport={"width": 1180, "height": 900}, locale="es-MX")
+    # Un sitio público (GitHub Pages) que llama a la API en 127.0.0.1 necesita el permiso de «red local»
+    # de Chrome; una persona lo concede en el aviso que muestra el navegador. Aquí se concede igual.
+    origen = "/".join(CLIENTE.split("/")[:3])
+    ctx.grant_permissions(["local-network-access"], origin=origen)
     pg = ctx.new_page()
     errores = []
     pg.on("pageerror", lambda e: errores.append(str(e)))
@@ -114,6 +118,7 @@ with sync_playwright() as p:
 
     # --- Vista de teléfono ---
     movil = nav.new_context(viewport={"width": 390, "height": 844}, device_scale_factor=2, is_mobile=True, locale="es-MX")
+    movil.grant_permissions(["local-network-access"], origin=origen)
     pm = movil.new_page()
     pm.goto(CLIENTE, wait_until="load")
     pm.get_by_text("API en línea").wait_for(timeout=60000)
@@ -125,6 +130,9 @@ with sync_playwright() as p:
     # --- La API vista directamente: JSON y Swagger ---
     pj = ctx.new_page()
     pj.goto(API + "/api/libros", wait_until="load")
+    # Casilla «Impresión con formato estilístico» del visor JSON de Chrome (está en un shadow DOM cerrado,
+    # por eso se pulsa por su posición en la esquina superior izquierda).
+    pj.mouse.click(246, 10)
     pj.wait_for_timeout(500)
     pj.screenshot(path=os.path.join(SALIDA, "07_json_libros.png"))
     pj.goto(API + "/docs", wait_until="networkidle")
