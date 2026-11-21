@@ -1,0 +1,13 @@
+✅ Recetas cargadas desde Firestore (2)
+✅ Servida por HTTPS (contexto seguro) 
+✅ Manifest válido para Chrome []
+✅ Service worker activo y controlando la página activated
+✅ Cache Storage con app shell, offline.html y SDK de Firebase (15 archivos)
+✅ Instalable: Chrome no reporta errores de instalabilidad []
+✅ Sin conexión: al recargar se ven las mismas recetas (Firestore offline) (2)
+✅ La búsqueda en TheMealDB avisa que necesita Internet (La búsqueda en TheMealDB necesita Internet. Tus recetas guar)
+✅ Página no guardada sin red → offline.html 
+✅ Sin errores de JavaScript []
+✅ Responsive: sin desbordamiento en 390 px 
+
+11/11 comprobaciones correctas
