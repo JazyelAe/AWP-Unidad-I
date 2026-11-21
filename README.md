@@ -17,7 +17,7 @@ Repositorio central de la Unidad I – Introducción a aplicaciones web progresi
 | SP5 | Multiplataforma | ConvierteYA | [ConvierteYA-Multiplataforma](https://github.com/JazyelAe/ConvierteYA-Multiplataforma) | [web](https://jazyelae.github.io/ConvierteYA-Multiplataforma/) · [APK v1.0.1](https://github.com/JazyelAe/ConvierteYA-Multiplataforma/releases/tag/v1.0.1) | [SP5 PDF](reportes/SP5_Aplicacion_Multiplataforma_SerranoArana.pdf) |
 | SP6 | Orientada a servicios | BiblioServ | [BiblioServ-Servicios](https://github.com/JazyelAe/BiblioServ-Servicios) | [cliente web](https://jazyelae.github.io/BiblioServ-Servicios/) (API local, sin hosting) | [SP6 PDF](reportes/SP6_Aplicacion_Servicios_SerranoArana.pdf) |
 | SP7 | Web progresiva (PWA) | Mi Recetario PWA | [MiRecetario-PWA](https://github.com/JazyelAe/MiRecetario-PWA) | [app instalable](https://jazyelae.github.io/MiRecetario-PWA/) | [SP7 PDF](reportes/SP7_Aplicacion_Web_Progresiva_SerranoArana.pdf) |
-| P1 | Producto No. 1 | Tabla comparativa | este repositorio | — | _pendiente_ |
+| P1 | Producto No. 1 | Tabla comparativa de los 7 tipos | este repositorio | — | [P1 PDF](reportes/P1_Reporte_Comparativo_SerranoArana.pdf) |
 
 ## Estructura
 

@@ -4,7 +4,7 @@
 **Alumno:** Jahir Jaziel Serrano Arana · 10° D
 **Repositorio:** `JazyelAe/AWP-Unidad-I` (central)
 **Archivo:** `reportes/P1_Reporte_Comparativo_SerranoArana.pdf`
-**Estado:** borrador para aprobación (Checkpoint A)
+**Estado:** aprobado el 20/11/2026 · PDF generado (8 páginas)
 
 ## 1. Objetivo
 Entregar el reporte que pide la profesora: una **tabla comparativa** de los 7 tipos de aplicaciones (nativas, web, de escritorio, orientadas a servicios, móviles, multiplataforma y web progresivas) con:
@@ -75,4 +75,11 @@ Todo sale de los **7 reportes ya aprobados (SP1–SP7)**, resumido y sin contrad
 | CA-6 | `PROGRESO.md` marca todo como completo. | GitHub |
 
 ## 7. Pruebas
-_(Se llena después de generar el PDF.)_
+| # | Resultado | Evidencia |
+|---|---|---|
+| CA-1 | ✅ Las 7 filas tienen las 7 columnas llenas: tabla en 2 páginas horizontales, letra de 7.5 pt y encabezado repetido. | PDF, págs. 2 y 3 |
+| CA-2 | ✅ **42/42 enlaces del PDF abren** (extraídos con PyMuPDF y probados con curl). | `evidencias/P1/enlaces_verificados.txt` |
+| CA-3 | ✅ Revisé cada página como imagen. Corregí dos palabras cortadas en la tabla («Multiplataforma» y un nombre de paquete). | — |
+| CA-4 | ✅ PDF subido a `reportes/`. | GitHub |
+| CA-5 | ✅ El README muestra la tabla final de enlaces con P1. | README.md |
+| CA-6 | ✅ PROGRESO marca todo como completo. | PROGRESO.md |
