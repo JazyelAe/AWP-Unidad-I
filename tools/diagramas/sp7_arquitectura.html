@@ -1,0 +1,36 @@
+<!doctype html><html lang="es"><meta charset="utf-8">
+<style>
+body{margin:0;font-family:Helvetica,Arial,sans-serif;background:#fff;color:#222}
+#diagrama{width:1160px;padding:28px 20px;box-sizing:border-box}
+h2{margin:0 0 20px;text-align:center;color:#7B173B;font-size:24px}
+.fila{display:flex;align-items:center;gap:0}
+.caja{border:2px solid #7B173B;border-radius:12px;padding:12px 14px;background:#F4EEF1}
+.caja h3{margin:0 0 6px;font-size:16px;color:#7B173B}
+.caja p,.caja li{margin:0;font-size:13.5px;line-height:1.5}
+.caja ul{margin:0;padding-left:18px}
+code{font-size:12.5px;background:#fff;padding:1px 4px;border-radius:4px}
+.fl{width:60px;text-align:center;font-size:12px;color:#7B173B;font-weight:bold}.fl b{display:block;font-size:26px}
+.app{border-color:#e8590c;background:#fff4ec}.app h3{color:#b8440a}
+.red{border-color:#0B7DDA;background:#EAF4FD}.red h3{color:#0B5FA5}
+.loc{border-color:#2E7D32;background:#EDF7EE}.loc h3{color:#1B5E20}
+.col{display:flex;flex-direction:column;gap:12px;flex:1}
+.nota{font-size:13px;color:#555;text-align:center;margin-top:16px}
+</style>
+<div id="diagrama">
+<h2>Mi Recetario PWA: cómo se instala y cómo funciona sin conexión</h2>
+<div class="fila">
+  <div class="caja app" style="width:250px"><h3>📱 App instalada</h3>
+    <p><code>manifest.json</code>: nombre, íconos (incluido el maskable), colores y <code>display: standalone</code> → icono propio y ventana sin barra de direcciones.</p></div>
+  <div class="fl"><b>⇄</b>peticiones</div>
+  <div class="caja" style="width:300px"><h3>⚙️ Service worker</h3>
+    <ul><li>Páginas: <b>network first</b> → copia → <code>offline.html</code></li>
+    <li>App y SDK de Firebase: <b>cache first</b></li>
+    <li>Fotos: <b>stale-while-revalidate</b></li></ul></div>
+  <div class="fl"><b>⇄</b></div>
+  <div class="col">
+    <div class="caja loc"><h3>💾 En el dispositivo</h3><p><b>Cache Storage</b> (archivos de la app y fotos) e <b>IndexedDB</b> (recetas de Firestore y escrituras pendientes)</p></div>
+    <div class="caja red"><h3>🌐 En Internet (HTTPS)</h3><p>GitHub Pages · Firebase Firestore · TheMealDB</p></div>
+  </div>
+</div>
+<div class="nota">Con red, todo se actualiza desde Internet; sin red, la app abre desde Cache Storage y muestra las recetas guardadas en IndexedDB, que se sincronizan al volver la conexión.</div>
+</div></html>

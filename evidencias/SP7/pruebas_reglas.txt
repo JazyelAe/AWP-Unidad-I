@@ -1,0 +1,8 @@
+✅ Borrar la receta antigua «lasaña» → rechazado (403)
+✅ La receta antigua sigue en la base 
+✅ Crear una receta con campos no permitidos y sin fecha del servidor → rechazado (403)
+✅ Crear una receta válida desde la app → permitido (Prueba de reglas 23:29:10)
+✅ Borrarla en menos de 10 minutos → permitido 
+✅ La receta de prueba ya no está en la base 
+
+6/6 comprobaciones correctas
