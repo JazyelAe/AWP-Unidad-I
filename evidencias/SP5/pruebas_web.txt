@@ -1,0 +1,16 @@
+✅ Etiqueta de plataforma: Web 
+✅ 10 km = 6.21371 mi 6.21371 mi
+✅ Conversión en tiempo real al escribir: 25 km = 15.5343 mi 15.5343 mi
+✅ 37 °C = 98.6 °F 98.6 °F
+✅ Intercambiar: 37 °F = 2.77778 °C 2.77778 °C
+✅ El portapapeles tiene el resultado '37 °F = 2.77778 °C'
+✅ Aviso web «Copiado» (en lugar del Toast nativo) 
+✅ 100 USD → MXN coincide con la API 1,906.71 MXN (API: 1,906.71 MXN)
+✅ Historial con 2 conversiones 
+✅ El historial persiste al recargar (AsyncStorage → localStorage) 
+✅ Sin conexión usa los tipos guardados 1,906.71 MXN
+✅ Borrar una entrada del historial 
+✅ Consola sin errores []
+✅ Sin desbordamiento horizontal en 390 px 
+
+14/14 comprobaciones correctas

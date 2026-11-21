@@ -1,0 +1,42 @@
+<!doctype html><html lang="es"><meta charset="utf-8">
+<style>
+body{margin:0;font-family:Helvetica,Arial,sans-serif;background:#fff;color:#222}
+#diagrama{width:1160px;padding:28px 20px;box-sizing:border-box}
+h2{margin:0 0 18px;text-align:center;color:#7B173B;font-size:24px}
+.fila{display:flex;align-items:stretch}
+.col{flex:1;display:flex;flex-direction:column;gap:10px}
+.caja{flex:1;border:2px solid #7B173B;border-radius:12px;padding:12px 14px;background:#F4EEF1}
+.caja h3{margin:0 0 8px;font-size:17px;color:#7B173B}
+.caja ul{margin:0;padding-left:18px;font-size:14px;line-height:1.55}
+.caja p{margin:0;font-size:14px;line-height:1.5}
+.fila>.caja{align-self:center}
+.fl{width:52px;display:flex;align-items:center;justify-content:center;font-size:32px;color:#7B173B}
+.and{border-color:#2E7D32;background:#EDF7EE}.and h3{color:#1B5E20}
+.ios{border-color:#777;background:#F3F3F3;border-style:dashed}.ios h3{color:#444}
+.web{border-color:#0B7DDA;background:#EAF4FD}.web h3{color:#0B5FA5}
+.nota{font-size:13px;color:#555;text-align:center;margin-top:14px}
+</style>
+<div id="diagrama">
+<h2>ConvierteYA: un solo código → Android, iOS y Web</h2>
+<div class="fila">
+  <div class="caja"><h3>1. Un solo código (JavaScript)</h3><ul>
+    <li><b>App.js</b> + <b>src/</b>: pantallas y componentes</li>
+    <li>Lógica pura: unidades y divisas (pruebas jest)</li>
+    <li>AsyncStorage: historial y respaldo</li>
+    <li><i>fetch</i> → API Frankfurter (BCE)</li>
+    <li><b>Platform.OS</b>: solo vibración y avisos cambian</li></ul></div>
+  <div class="fl">➜</div>
+  <div class="caja"><h3>2. React Native + Expo SDK 58</h3><ul>
+    <li>&lt;View&gt;, &lt;Text&gt;, &lt;TextInput&gt;, &lt;Pressable&gt;</li>
+    <li>Módulos Expo: Clipboard, Haptics</li>
+    <li>Metro empaqueta el JavaScript</li>
+    <li>Cada plataforma dibuja sus propios componentes</li></ul></div>
+  <div class="fl">➜</div>
+  <div class="col">
+    <div class="caja and"><h3>📱 Android</h3><p><i>expo prebuild</i> + Gradle → APK. Componentes nativos de Android; Toast y vibración.</p></div>
+    <div class="caja ios"><h3>🍎 iOS</h3><p>Mismo código; se compila con Xcode o se abre con Expo Go (no probado aquí: requiere Mac o cuenta).</p></div>
+    <div class="caja web"><h3>🌐 Web</h3><p><i>react-native-web</i> → HTML y CSS en el navegador; publicada en GitHub Pages.</p></div>
+  </div>
+</div>
+<div class="nota">Una aplicación multiplataforma comparte la misma base de código entre sistemas; solo las diferencias inevitables se resuelven por plataforma.</div>
+</div></html>

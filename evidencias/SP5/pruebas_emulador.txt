@@ -1,0 +1,36 @@
+== Dispositivo: sdk_gphone64_x86_64 · Android 14 (API 34) · idioma es-MX
+CA-2 instalación del APK: OK
+CA-2 la app abre: OK
+RF-5 etiqueta de plataforma: OK (Android · API 34)
+CA-2 10 km → mi (igual que en la web): OK (6.21371 mi)
+  tocado: Temperatura
+  tocado: Cantidad
+CA-2 37 °C → °F (igual que en la web): OK (98.6 °F)
+  tocado: Guardar en historial · captura: 06_android_unidades.png
+  tocado: Intercambiar
+CA-5 intercambiar: OK (2.77778 °C)
+  tocado: Copiar · captura: 06b_android_copiar.png
+  tocado: Divisas
+CA-3 la API responde en Android: OK
+CA-2 100 USD → MXN coincide con la API: OK (1,906.71 MXN)
+captura: 07_android_divisas.png
+  tocado: Guardar en historial
+  tocado: Historial
+Historial con 2 conversiones: OK (2 de 30 conversiones guardadas)
+captura: 08_android_historial.png
+  tocado: Historial
+CA-4 el historial persiste al cerrar y abrir: OK (2 de 30 conversiones guardadas)
+Modo avión: 1 (1 = activado)
+  tocado: Divisas
+CA-3 sin conexión avisa y usa los tipos guardados: OK (Sin conexión · tipos del)
+CA-3 mismo resultado sin conexión: OK (1,906.71 MXN)
+captura: 09_android_sin_conexion.png
+-- Vibraciones de la app (expo-haptics):
+    createTime: 11-21 04:17:11.041, startTime: 11-21 04:17:11.053, endTime: 11-21 04:17:11.106, durationMs: 66, status: finished, effect: Mono{mEffect=Composed{segments=[Step{amplitude=0.0, frequencyHz=0.0, duration=0}, 
+    createTime: 11-21 04:17:22.074, startTime: 11-21 04:17:22.074, endTime: 11-21 04:17:22.124, durationMs: 51, status: finished, effect: Mono{mEffect=Composed{segments=[Step{amplitude=0.0, frequencyHz=0.0, duration=0}, 
+    createTime: 11-21 04:17:37.748, startTime: 11-21 04:17:37.749, endTime: 11-21 04:17:37.801, durationMs: 52, status: finished, effect: Mono{mEffect=Composed{segments=[Step{amplitude=0.0, frequencyHz=0.0, duration=0}, 
+  tocado: Unidades
+captura: 12_android_oscuro.png
+captura: 10_android_icono.png
+-- Errores de JavaScript en logcat:
+== Fin
